@@ -16,6 +16,10 @@ public class Game extends ApplicationAdapter {
 	public void create() {
 		WIDTH = Gdx.graphics.getWidth();
 		HEIGHT = Gdx.graphics.getHeight();
+
+		cam = new OrthographicCamera(WIDTH, HEIGHT);
+		cam.translate(WIDTH / 2, HEIGHT / 2);
+		cam.update();
 	}
 
 	@Override
